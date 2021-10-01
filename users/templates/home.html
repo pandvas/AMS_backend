@@ -1,0 +1,850 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Alumni Meet |</title>
+
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/templatemo-medic-care.css' %}" rel="stylesheet">
+
+        <style>
+            #saveButton{
+              background-color:orange;
+              color:white;
+            }
+            .dropbtn {
+
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
+            #logo {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 50px;
+    width: 50px; /* correct proportions to specified height */
+    border-radius: 50%; /* makes it a circle */
+    }
+
+            .dropdown-content a:hover {background-color: #ddd;}
+
+            .dropdown:hover .dropdown-content {display: block;}
+
+
+        </style>
+    </head>
+
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+                <div class="container">
+                    <a href="#"><img id="logo"  src="../static/images/AMS-logos_black.png"></a>
+                    <a class="navbar-brand mx-auto d-lg-none" href="#">
+                        Alumni meet
+                        <strong class="d-block">AMS</strong>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#hero">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reach_us">Reach us</a>
+                            </li>
+
+                            <a class="navbar-brand d-none d-lg-block" href="#">
+                                Alumni meet
+                                <strong class="d-block">AMS</strong>
+                            </a>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#booking">Ask Us</a>
+                            </li>
+
+                            <!-- <li class="nav-item">
+                                <div class="dropdown">
+                                <a class="nav-link dropbtn" href="#">Login</a>
+                                <div class="dropdown-content">
+                                    <a href="#studentLogin">Student</a>
+                                    <a href="#adminLogin">Admin</a>
+                                </div>
+                                </div>
+                            </li> -->
+
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                  <a class="nav-link dropbtn" href="#">Login</a>
+                                  <div class="dropdown-content">
+                                    <a href="#studentLogin">Student</a>
+                                    <a href="#adminLogin">Admin</a>
+                                   </div>
+                                  </div>
+                              </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact1">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+<!-- hero -->
+
+
+
+<!-- hero -->
+            <section class="hero" id="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="{% static 'images/slider/image1.jpg' %}" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="heroText d-flex flex-column justify-content-center">
+
+                                <h2 class="mt-auto mb-2">
+                                    We Organize
+                                    <div class="animated-info">
+                                        <span style="color:brown;">Event</span>
+                                  </div>
+                                </h2>
+
+                                <p class="mb-4">Existence of the alumni association encourages the future goals of the parent organization and to reinforce the bonds between, the community, alumni and the organization</p>
+
+                                <div class="heroLinks d-flex flex-wrap align-items-center">
+                                    <!-- <a class="custom-link me-4" href="#about" data-hover="Learn More">Learn More</a> -->
+
+                                    </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="about">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h2 class="mb-lg-3 mb-3">Who We are</h2>
+
+                            <p>Alumni association refers to the association of the former students or graduates. Moreover, these groups intend to support the new alumni by providing an opportunity to build new relationships and friendships with the people having a similar background.</p>
+
+                            <p>Existence of the alumni association encourages the future goals of the parent organization and to reinforce the bonds between, the community, alumni and the organization.</p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-12 mx-auto">
+                            <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
+                                <p class="featured-text"> Project Ready <br>on Day<br> <br><br><span class="featured-number">1</span><br><br>RealCoderz</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+             <!-- blog -->.
+
+
+             <section class="text-gray-600 body-font">
+                <div class="  container px-5 py-24 mx-auto">
+                  <div class="flex flex-wrap -m-4">
+
+                    <div class="p-4 md:w-1/3">
+                      <div class=" h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="../static/images/alum1.jpg" alt="blog">
+                        <div class=" p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Golden Jubilee Alumni Meet: </h1>
+                          <p class="leading-relaxed mb-3">Every year, new students enter the institute and old students bid farewell. An institution’s network is widespread in terms on numerous alumni spread across different cities and countries.</p>
+                          <p>Connections with all the alumni over the years is difficult to maintain unless the institute involves itself into keeping in touch and engaging their alumni.</p>
+                          <div class="flex items-center flex-wrap ">
+                            <a class="text-pink-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                            <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                              </svg>2.7K
+                            </span>
+                            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>6
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="../static/images/alum2.jpg" alt="blog">
+                        <div class=" p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Silver Jubilee Alumni Meet:</h1>
+                          <p class="leading-relaxed mb-3">Celebrating 25 years of the institute with its alumni is another type of reunion. The policies, mission and vision of the institute can be reflected upon and a small talk on how 25 years of the institute have shaped and cultivated its discipline in the students is one of the things that can be planned for a silver jubilee reunion.</p>
+                          <div class="flex items-center flex-wrap">
+                            <a class="text-pink-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                            <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                              </svg>1.2K
+                            </span>
+                            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>6
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                      <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="../static/images/alum3.jpg" alt="blog">
+                        <div class=" p-6">
+                          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Homecomming</h1>
+                          <p class="leading-relaxed mb-3">Several institutions organise alumni meet frequently at specific intervals. These reunions aren’t specific to any particular batch; it can be organised for one batch or for all.  Alumni from different batches come together and walk down the lane of nostalgia.</p>
+                          <div class="flex items-center flex-wrap ">
+                            <a class="text-pink-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg>
+                            </a>
+                            <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                              </svg>1.2K
+                            </span>
+                            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                              </svg>6
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            <!-- blog -->
+
+            <!-- <section class="section-padding pb-0" id="timeline">
+                <div class="container">
+                    <div class="row">
+
+                        <h2 class="text-center mb-lg-5 mb-4">Our Timeline</h2>
+
+                        <div class="timeline">
+                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                                <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                                    <h3 class=" text-light">Get the vaccine</h3>
+
+                                    <p>Donec facilisis urna dui, a dignissim mauris pretium a. Quisque quis libero fermentum, tempus felis eu, consequat nibh.</p>
+                                </div>
+
+                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                    <i class="bi-patch-check-fill timeline-icon"></i>
+                                </div>
+
+                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                                    <time>2021-07-31 Saturday</time>
+                                </div>
+                            </div>
+
+                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
+                                <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                                    <h3 class=" text-light">Consulting your health</h3>
+
+                                    <p>You are fully permitted to use this template for your commercial or personal website. You are not permitted to redistribute the template ZIP file for a download purpose on any other <a href="https://www.google.com/search?q=free+css" target="_blank">Free CSS collection</a> website.</p>
+                                </div>
+
+                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                    <i class="bi-book timeline-icon"></i>
+                                </div>
+
+                                <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                                    <time>2021-07-15 Thursday</time>
+                                </div>
+                            </div>
+
+                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                                <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                                    <h3 class=" text-light">Certified Nurses</h3>
+
+                                    <p>Phasellus eleifend, urna interdum congue viverra, arcu neque ultrices ligula, id pulvinar nisi nibh et lacus. Vivamus gravida, ipsum non euismod tincidunt, sapien elit fermentum mi, quis iaculis enim ligula at arcu.</p>
+                                </div>
+
+                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                    <i class="bi-file-medical timeline-icon"></i>
+                                </div>
+
+                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                                    <time>2021-06-28 Monday</time>
+                                </div>
+                            </div>
+
+                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
+                                <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                                    <h3 class=" text-light">Covid-19 Hospitals</h3>
+
+                                    <p class="mb-0 pb-0">Fusce vestibulum euismod nulla sed ultrices. Praesent rutrum nulla vel sapien euismod, quis tempus dui placerat.</p>
+
+                                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla</p>
+                                </div>
+
+                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                    <i class="bi-globe timeline-icon"></i>
+                                </div>
+
+                                <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                                    <time>2021-05-30 Sunday</time>
+                                </div>
+                            </div>
+
+                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                                <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                                    <h3 class=" text-light">Freelance Nursing</h3>
+
+                                    <p>If you need a working contact form that submits email to your inbox, please <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">visit our contact page</a> for more information.</p>
+                                </div>
+
+                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                                    <i class="bi-person timeline-icon"></i>
+                                </div>
+
+                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                                    <time>2021-05-18 Tuesday</time>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section> -->
+
+<!-- 444444444444444444 -->
+<section class="text-gray-600 body-font">
+
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+
+      <div class="flex w-full mb-20 flex-wrap" style="background : #EFF0F1; padding:20px;"  >
+        <i class="bi bi-info-circle"></i>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16" style="margin-right:10px">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg> -->
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/2 lg:mb-0 mb-4"><span style="color:#00274C;">Alumni Association Updates on COVID-19</span></h1><br>
+        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Visit our<a  href ="https://www.who.int/health-topics/coronavirus#tab=tab_1"> <span style="color: #0D57AA;">COVID-19 page</span> </a>to get the latest updates on the Alumni Center and Alumni Association events and programs.</p>
+      </div>
+      <div class="flex flex-wrap md:-m-2 -m-1">
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="../static/images/slider/DSC_3909.JPG">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="../static/images/slider/DSC_3779.JPG">
+          </div>
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="../static/images/slider/DSC_3838.JPG">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="../static/images/slider/d1.JPG">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="../static/images/slider/DSC_3797.JPG">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="../static/images/slider/DSC_3779.JPG">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 5555555555555555555555 -->
+
+<!-- gmap -->
+            <!-- <section class="section-padding pb-0" id="reviews">
+                <div class="container" >
+                    <div class="row">
+
+                        <div class=" col-lg-8 " >
+                            <h2 class="text-center mb-lg-5 mb-4">Where We are</h2>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.44724397334!2d77.4029418!3d28.496188800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce9b6207e08a7%3A0x2141e16f70ac4081!2sRealCoderZ!5e0!3m2!1sen!2sin!4v1630758470358!5m2!1sen!2sin" style="width:100%;height:150%;" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </section> -->
+
+<!-- gmap -->
+
+            <section  id="booking"  style="margin-top:400px;">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="booking-form">
+                                <h2 class="text-center mb-lg-3 mb-2">Request A Query</h2>
+
+                                <form role="form" action="#booking" method="post">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="Phone: 123-456-7890">
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                            <input type="date" name="date" id="date" value="" class="form-control">
+
+                                        </div>
+
+                                        <div class="col-12">
+                                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Additional Message"></textarea>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
+                                            <button type="submit" class="text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg" id="submit-button">Request</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+           <!-- ggggggggggggggggggg  -->
+
+
+           <section class="text-gray-600 body-font relative"  >
+
+            <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap" id = "contact1">
+              <div class="lg:w-2/3 md:w-1/2 bg-gray-500 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <!--
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+                 -->
+          <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map"  marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJpwh-ILbpDDkRgUCscG_hQSE&key=AIzaSyBikuwwj54VFaSzS-EKWRTlQODKEz_xyso"  ></iframe>
+
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                  <div class="lg:w-1/2 px-6">
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                    <p class="mt-1">RealCoderZ ABC-Tower Sec-135</p>
+                  </div>
+                  <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                    <a class="text-pink-500 leading-relaxed">RealCoderZ@realcoder.com</a>
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                    <p class="leading-relaxed">123-456-7890</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:w-1/4 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">You are few Step away from Contact US </p>
+                <div class="relative mb-4">
+                  <form method="post">
+                    {% csrf_token %}
+                  <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                  <input type="text" id="name"  class="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                  <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                  <input type="email" id="email"  class="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                  <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                  <textarea id="message"  class="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button onclick="save_contact()" class="text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">Button</button>
+              </form>
+                <p class="text-xs text-gray-500 mt-3">You Will Get Notification After this</p>
+
+              </div>
+            </div>
+          </section>
+           <!-- gggggggggggggggggg -->
+            <section class="section-padding" id="adminLogin">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="booking-form ">
+                                <h2 class="text-center mb-lg-3 mb-2">Admin Login</h2>
+
+                                <form role="form" action="#booking" method="post">
+                                    <div class="row ">
+
+                                        <div class="col-lg-6 col-12">
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <input type="password" name="pasword" id="password"  class="form-control" placeholder="Password" required>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
+                                            <button type="submit" class="form-control" id="submit-button">Login</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="studentLogin">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="booking-form ">
+                                <h2 class="text-center mb-lg-3 mb-2">Student Login</h2>
+
+                                <form role="form" action="#booking" method="post">
+                                    <div class="row ">
+
+                                        <div class="col-lg-6 col-12">
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <input type="password" name="pasword" id="password"  class="form-control" placeholder="Password" required>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
+                                            <button type="submit" class="form-control" id="submit-button">Login</button>
+                                        </div>
+                                    </div>
+                                </form><br>
+                                <i>Note: If you dont Recieve email password then contact your university</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+<!-- 77777777777777 -->
+
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class=" maxy p-4 lg:w-1/2">
+          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="../static/images/IMG_4399.jpg">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Sandeep Kumar</h2>
+              <h3 class="text-gray-500 mb-3">API Developer</h3>
+              <p class="mb-4">B.tech-ECE</p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class=" maxy p-4 lg:w-1/2">
+          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="../static/images/IMG_4402.jpg">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Faizan Arif</h2>
+              <h3 class="text-gray-500 mb-3">UI Developer</h3>
+              <p class="mb-4">B.tech-CSE</p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="maxy p-4 lg:w-1/2">
+            <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+              <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="../static/images/shubhamSingh.png">
+              <div class="flex-grow sm:pl-8">
+                <h2 class="title-font font-medium text-lg text-gray-900">Shubham Singh</h2>
+                <h3 class="text-gray-500 mb-3">Cloud Guy</h3>
+                <p class="mb-4">MCA</p>
+                <span class="inline-flex">
+                  <a class="text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                    </svg>
+                  </a>
+                  <a class="ml-2 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        <div class="maxy p-4 lg:w-1/2">
+          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="../static/images/IMG_4396.jpg">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Niraj Tiwari</h2>
+              <h3 class="text-gray-500 mb-3">Backend Developer</h3>
+              <p class="mb-4">MCA</p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="maxy p-4 lg:w-1/2">
+          <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="../static/images/IMG_4397.jpg">
+            <div class="flex-grow sm:pl-8">
+              <h2 class="title-font font-medium text-lg text-gray-900">Prateek Chaurasiya</h2>
+              <h3 class="text-gray-500 mb-3">Designer</h3>
+              <p class="mb-4">B.tech-CSE</p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 8888888888888 -->
+        </main>
+
+        <footer class="text-gray-30 bg-gray-150 body-font " >
+            <div class="container px-5 py-24 mx-auto">
+                <div class="row">
+
+                    <div class="col-lg-5 me-auto col-12">
+                        <h5 class="mb-lg-4 mb-3">Opening Hours</h5>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex">
+                                Monday - Firday
+                                <span>8:00 AM - 2:30 AM</span>
+                            </li>
+
+                            <li class="list-group-item d-flex">
+                                Sunday - Saturday <span>Closed</span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                        <h5 class="mb-lg-4 mb-3" id="reach_us">Reach Us</h5>
+
+                        <p><a href="mailto:hello@company.co">rc@realcoderz.com</a><p>
+
+                        <p>Assotech Buisness Crestera, Tower-2, Sector - 135, Noida, Uttar Pradesh - 201308</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 ms-auto">
+                        <h5 class="mb-lg-4 mb-3">Socials</h5>
+
+                        <ul class="social-icon">
+                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
+                        <p class="copyright-text">Copyright © Medic Care 2021
+                        <br><br>Design: <a href="h" target="_parent">TemplateMo</a></p>
+                    </div> -->
+
+                </div>
+            </section>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script>
+          function save_contact() {
+            var token = "{{csrf_token}}";
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var message = $("#message").val();
+
+            $.ajax({
+              type: "POST",
+              headers: { "X-CSRFToken": token },
+              url: "http://127.0.0.1:8000/api/contact/",
+              data: { name: name , description :message , email :email },
+
+              success: function (data) {
+
+                console.log(data);
+              },
+              error: function (data) {
+                  console.log(error);
+              }
+            });
+          }
+        </script>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+
+
+
+    </body>
+</html>

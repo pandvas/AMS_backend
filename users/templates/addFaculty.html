@@ -1,0 +1,63 @@
+{% extends 'index.html' %}
+{% block start %}
+      <section class="section-padding" id="booking">
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-lg-8 col-12 mx-auto">
+                    <div class="booking-form">
+                        
+                        <h2 class="text-center mb-lg-3 mb-2">Add Faculty Details</h2>
+                    
+   
+                        <form action="#" method="POST">
+                          {% csrf_token %} 
+                          <!-- <button type="submit" class="btn btn-info my-2">Submit</button> -->
+                          <div class="row">
+                            <div class="col-lg-6 col-12">
+                              <input type="text" id="departmentName" class="form-control" placeholder="Faculty Name" required/>                        
+                            </div> 
+                            <div class="col-lg-6 col-12">
+                             <input type="email"  id="hodEmail" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>          </div>
+                            <div class="col-lg-6 col-12">
+                              <input type="text" id="depart" class="form-control" placeholder="Designation" required/>                        
+                            </div> 
+                        
+                              </div>
+                             <div class="col-lg-12 col-md-12 col-12 mx-auto">
+                             <input type="submit" class="form-control" id="saveButton" onclick="save_data()" text="save"/>
+                             </div>
+                        </form>
+      <div id="error-list"></div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<script>   
+  function save_data() {
+    var token = "{{csrf_token}}";
+    var name = $("#departmentName").val();
+    var email = $("#hodEmail").val();
+    var designation = $("#depart").val();
+    
+    $.ajax({
+      type: "POST",
+      headers: { "X-CSRFToken": token },
+      url: "http://127.0.0.1:8000/api/admin/addFaculty/",
+      data: { name: name,email:email,designation:designation },
+
+      success: function (data) {
+        
+        console.log(data);
+      },
+      error: function (data) {
+          console.log(error);
+      }
+    });
+  }
+</script>
+
+
+  {% endblock %}

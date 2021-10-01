@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>students api</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ </head>
+<body>
+<div>
+   <button class="apireq">click me </button> 
+</div>
+<div id="jsonresp" style="margin-top: 100px">
+   <p><label> name :</label> <span id="name"></span></p>
+   <p><label> Address :</label> <span id="address"></span></p>
+   
+</div>
+    <script type="text/javascript">
+        $('.apireq').click( function() {
+    $.ajax({
+             url : "http://localhost:8000/api/getUniversity/",
+             dataType: "json",
+             success : function (data) {
+                      $('#name').text( data[0].email);
+                      $('#address').text( data[0].address);
+                    }
+                 });
+             });
+    </script>
+</body>
+</html>

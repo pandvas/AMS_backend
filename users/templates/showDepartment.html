@@ -1,0 +1,85 @@
+{% extends 'index.html' %}
+{% block start %}
+      <section class="section-padding" id="booking">
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-lg-8 col-12 mx-auto">
+                    <div class="booking-form text-center">
+                        
+                        <h2 class="text-center mb-lg-3 mb-2">Show Department Details</h2>
+                    
+                        <table class="text-center" style="margin-left:20%;">
+                          <tr>
+                            <td style="padding:20px;">Id</td>
+                            <td style="padding:20px;">Name</td>
+                          
+                          </tr>
+                          {% for department in all_data %}
+                          <tr style="border-bottom: 1px solid #000;">
+                            <td style="padding:20px;">{{ department.id }}</td>
+                            <td style="padding:20px;">{{ department.name }}</td>
+                            <td style="padding:20px;">
+                              <button type='submit' value="{{ department.id }}" id="fid" name="fid" onclick="delete_data(this.value)">Delete</button></td>
+                          </tr>
+                          {% endfor %}
+                        </table>
+                    </div>
+                  
+      <div id="error-list"></div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<script>   
+  function save_data() {
+    var token = "{{csrf_token}}";
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var password = $("#password").val();
+    var address = $("#address").val();
+    $.ajax({
+      type: "POST",
+      headers: { "X-CSRFToken": token },
+      url: "http://127.0.0.1:8000/api/admin/addUniversity/",
+      data: { name: name, email: email, password: password, address:address },
+
+      success: function (data) {
+        
+        console.log(data);
+      },
+      error: function (data) {
+          console.log(error);
+      }
+    });
+  }
+
+
+  function delete_data(data) {
+    var token = "{{csrf_token}}";
+    // var it=document.getElementById("fid").value;
+    // alert(data)
+    $.ajax({
+      type: "DELETE",
+      headers: { "X-CSRFToken": token },
+      url: "http://127.0.0.1:8000/api/departdel/"+data,
+
+      success: function (data) {
+        window.location= "http://127.0.0.1:8000/userAdmin/showDepartment/";
+        
+        console.log(data);
+      },
+      error: function (data) {
+          console.log(error);
+      }
+    });
+  }
+
+
+
+</script>
+
+  {% endblock %}
+   

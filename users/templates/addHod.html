@@ -1,0 +1,70 @@
+{% extends 'index.html' %}
+{% block start %}
+      <section class="section-padding" id="booking">
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-lg-8 col-12 mx-auto">
+                    <div class="booking-form">
+                        
+                        <h2 class="text-center mb-lg-3 mb-2">Add Hod Details</h2>
+                    
+   
+      <form action="" method="POST">
+        {% csrf_token %} 
+        <!-- <button type="submit" class="btn btn-info my-2">Submit</button> -->
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <input type="text" id="hodName" class="form-control" placeholder="Hod Name" required/>                        
+          </div>
+          <div class="col-lg-6 col-12">
+            <input type="number" id="hodPhone" class="form-control" placeholder="Phone" required/>                        
+          </div>
+          <div class="col-lg-6 col-12">
+            <input type="email"  id="hodEmail" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+          </div>
+          <div class="col-lg-6 col-12">
+            <input type="number" id="departmentId" class="form-control" placeholder="Department Id" required/>                        
+          </div>
+          <div class=" col-lg-12 col-12">
+            <textarea type="text"  id="hodAddress" class="form-control" placeholder="Address" required></textarea>
+        </div>
+          
+      
+      </div>
+      <div class="col-lg-12 col-md-12 col-12 mx-auto">
+        <input type="submit" class="form-control" id="saveButton" onclick="save_data()" text="save"/>
+      </div>
+      </form>
+      <div id="error-list"></div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<script>   
+  function save_data() {
+    var token = "{{csrf_token}}";
+    var Name = $("#hodName").val();
+    var Phone = $("#hodPhone").val();
+    var Email = $("#hodEmail").val();
+    var DepartmentId = $("#departmentId").val();
+    var Address = $("#hodAddress").val();
+    console.log(Name)
+    $.ajax({
+      type: "POST",
+      headers: { "X-CSRFToken": token },
+      url: "http://127.0.0.1:8000/api/admin/addHod/",
+      data: { name: Name, phone:Phone, email:Email,id_hod:DepartmentId, address:Address },
+      success: function (data) {
+        console.log(data);
+      },
+      error: function (data) {
+          console.log(error);
+      }
+    });
+  }
+</script>
+
+  {% endblock %}
