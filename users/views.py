@@ -102,7 +102,7 @@ class Roll_list(APIView):
 
 
 class RegisterDepartmentView(APIView):
-    #permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     def post(self, request):
         serializer=DepartmentSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -121,7 +121,7 @@ class Departmentlist(APIView):
 
 
 class RegisterHodView(APIView):
-    #permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     def post(self, request):
         serializer=HodSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -137,7 +137,7 @@ class Hodlist(APIView):
 
 # GET FACUILTY
 class FacuiltytGet(APIView):
-    # permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     def get(self,request):
         snippets = Faculty.objects.all()
         serializer = FacultySerializer(snippets, many=True)
@@ -145,7 +145,7 @@ class FacuiltytGet(APIView):
 
 
 class RegisterFacultyView(APIView):
-    # permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     def post(self, request):
         serializer=FacultySerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -153,7 +153,7 @@ class RegisterFacultyView(APIView):
         return Response(serializer.data)
 
 class RegisterStudentView(APIView):
-    # permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     def post(self, request):
         serializer=StudentSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -161,7 +161,7 @@ class RegisterStudentView(APIView):
         return Response(serializer.data)
 
 class RegisterCourseView(APIView):
-    # permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     def post(self, request):
         serializer=CourseSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -178,7 +178,7 @@ class EventGet(APIView):
 
 
 class RegisterEventView(APIView):
-    # permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     def post(self, request):
         serializer=EventSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
