@@ -26,7 +26,9 @@ INSTALLED_APPS = [
     'users',
     'rest_framework_simplejwt',
     
-    'drf_api_logger',  
+    'drf_api_logger', 
+     
+    'coverage',# for testing of API & VIEWS
 ]
 
 MIDDLEWARE = [

@@ -1,6 +1,8 @@
 from rest_framework import serializers
-from .models import User,University,Department,Hod,Faculty,Student,Course,Event, Eventpoll, StudentPassword,Contact,Department_mapper,Faculty_mapper, Student_mapper, Rollno_mapper, Event_mapper
+from .models import User,University,Department,Hod,Faculty,Student,Course,Event,Contact,Department_mapper,Faculty_mapper, Student_mapper,Event_mapper
 from django.contrib.auth import password_validation
+from datetime import date
+from  .models import Poll2
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -39,9 +41,7 @@ class UniversitySerializer(serializers.ModelSerializer):
 
                 
         return value
-    # def validate_password(self,value):
-    #     password_validation.validate_password(value,self.instance)
-    #     return value
+    
        
         
 class DepartmentSerializer(serializers.ModelSerializer):
@@ -106,10 +106,8 @@ class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model=Course
         fields=['name','departmentid']
-from datetime import date
 
 
-# print("Today's date:", today)
 
 class EventSerializer(serializers.ModelSerializer):
     class Meta:
@@ -123,16 +121,6 @@ class EventSerializer(serializers.ModelSerializer):
         return value
 
                 
-
-class EventpollSerializer(serializers.ModelSerializer):
-    class Meta:
-        model=Eventpoll
-        fields=['id','interested','eventid','studentid']
-
-class StudentPasswordSerializer(serializers.ModelSerializer):
-    class Meta:
-        model=StudentPassword
-        fields=['studentid','password']
 
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
@@ -157,11 +145,6 @@ class StudentMapperSerializer(serializers.ModelSerializer):
     class Meta:
         model=Student_mapper
         fields=['studentid','courseid','universityid','departmentid']
-
-class RollNoMapperSerializer(serializers.ModelSerializer):
-    class Meta:
-        model=Rollno_mapper
-        fields=['rollno','studentid']
 
 class EventMapperSerializer(serializers.ModelSerializer):
     class Meta:
@@ -191,7 +174,6 @@ class AuthenticationSerializer(TokenObtainPairSerializer):
 
         return data
 
-from  .models import Poll2
 class Poll2Serializer(serializers.ModelSerializer):
     class Meta:
         model=Poll2
