@@ -91,12 +91,12 @@ class Regevent(APITestCase):
 
 
 
-class Regst(APITestCase):
+# class Regst(APITestCase):
 
-    def setUp(self):
-        self.register_url=reverse('stpass')  
-        self.user_data ={"studentid":"Alumani Meet","password":"Noid123"}
-        return super().setUp()
+#     def setUp(self):
+#         self.register_url=reverse('stpass')  
+#         self.user_data ={"studentid":"Alumani Meet","password":"Noid123"}
+#         return super().setUp()
 
-    def tearDown(self):
-        return super().tearDown()
+#     def tearDown(self):
+#         return super().tearDown()

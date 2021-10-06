@@ -52,7 +52,7 @@ class regEventTest(Regevent):
         self.assertEqual(res.status_code,400)
 
 
-class Regst(Regst):
-    def test_user_ca(self):
-        res=self.client.post(self.register_url)
-        self.assertEqual(res.status_code,400)        
+# class Regst(Regst):
+#     def test_user_ca(self):
+#         res=self.client.post(self.register_url)
+#         self.assertEqual(res.status_code,400)        

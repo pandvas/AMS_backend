@@ -77,23 +77,6 @@ class Event(models.Model):
     def __unicode__(self):
         return self.name
 
-class Eventpoll(models.Model):
-    id = models.AutoField(primary_key=True)
-    studentid = models.ForeignKey(Student, on_delete=models.CASCADE, null=True, blank=True)
-    eventid = models.ForeignKey(Event, on_delete=models.CASCADE, null=True, blank=True)
-    interested=models.BooleanField(default=True)
-
-    def __unicode__(self):
-        return self.interested
-
-class StudentPassword(models.Model):
-    id = models.AutoField(primary_key=True)
-    studentid=models.CharField(max_length=30)
-    password=models.CharField(max_length=30)
-
-    def __unicode__(self):
-        return self.password
-
 class Contact(models.Model):
     name = models.CharField(max_length=220)
     description = models.CharField(max_length=220)
@@ -135,14 +118,6 @@ class Student_mapper(models.Model):
     def __unicode__(self):
         return self.studentid
 
-class Rollno_mapper(models.Model):
-    id = models.AutoField(primary_key=True)
-    rollno=models.IntegerField()
-    studentid=models.ForeignKey(Student,on_delete=models.CASCADE,blank=True,null=True)
-
-    def __unicode__(self):
-        return self.rollno
-
 class Event_mapper(models.Model):
     id = models.AutoField(primary_key=True)
     eventid=models.ForeignKey(Event,on_delete=models.CASCADE,null=True,blank=True)
@@ -150,6 +125,5 @@ class Event_mapper(models.Model):
 
     def __unicode__(self):
         return self.eventit
-
 class Poll2(models.Model):
     option = models.CharField(max_length=30)

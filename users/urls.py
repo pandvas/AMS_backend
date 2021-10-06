@@ -11,8 +11,8 @@ urlpatterns = [
     # path('admin/loginform/',LoginView.as_view()),
     path('admin/login/', LoginView.as_view(),name="login"),
 
-    path('admin/', UserView.as_view()),
-    path('admin/logout/', LogoutView.as_view()),
+    # path('admin/', UserView.as_view()),
+    # path('admin/logout/', LogoutView.as_view()),
     path('admin/addUniversity/',RegisterUniversityView.as_view()),
 
     path('admin/addDepartment/', RegisterDepartmentView.as_view(),name="regdepart"),
@@ -22,15 +22,12 @@ urlpatterns = [
     path('admin/addCourse/', RegisterCourseView.as_view(),name='regcourse'),
     path('admin/addEvent/', RegisterEventView.as_view(),name='eventreg'),
 
-    path('eventPoll/', EventpollView.as_view()),
-
-    path('studentPassword/', StudentPasswordView.as_view(),name='stpass'),
     path('contact/', ContactView.as_view(),name="ctrd"),
 
     path('admin/departmentMapper/', DepartmentMapperView.as_view()),
     path('admin/facultyMapper/', FacultyMapperView.as_view()),
     path('admin/studentMapper/', StudentMapperView.as_view()),
-    path('admin/rollNoMapper/', RollNoMapperView.as_view()),
+    # path('admin/rollNoMapper/', RollNoMapperView.as_view()),
     path('admin/eventMapper/', EventMapperView.as_view()),
     path('getDepartment/', Departmentlist.as_view()),
     path('getUniversity/',Universitylist.as_view()),
@@ -39,7 +36,7 @@ urlpatterns = [
 
     path('getStudent/',Studentlist.as_view()),
     path('getevent/',EventGet.as_view()),
-    path('getRoll/',Roll_list.as_view()),
+    # path('getRoll/',Roll_list.as_view()),
 
     path("ptup/<int:id>",views.UserViewSet3.as_view(),name="sdes"),
     path("ptdel/<int:id>",views.UserViewSetDel.as_view(),name="sd"),
